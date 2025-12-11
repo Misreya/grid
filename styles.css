@@ -1,0 +1,77 @@
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, strong, em {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+input, button, textarea, select {
+  font: inherit;
+  background: none;
+  border: none;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+ol, ul, menu, a {
+  list-style: none;
+ text-decoration: none;
+}
+
+:root {
+    --variable: 1px;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  padding: 10px;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+}
+
+.child {
+  background-color: orange;
+  aspect-ratio: 1;
+  width: 150px;
+  cursor: pointer;
+  transition: background-color 100ms, scale 100ms;
+  font-size: small;
+  padding: 10px;
+}
+
+.child:hover {
+  background-color: hsl(39, 100%, 40%);
+  scale: 0.95;
+}
+
+.span-all {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
