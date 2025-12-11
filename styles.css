@@ -47,7 +47,7 @@ h1 {
   text-align: center;
   font-weight: bold;
   font-size: larger;
-  padding: 10px;
+
 }
 
 .parent {
@@ -60,18 +60,63 @@ h1 {
   background-color: orange;
   aspect-ratio: 1;
   width: 150px;
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: background-color 100ms, scale 100ms;
   font-size: small;
   padding: 10px;
 }
 
-.child:hover {
+/* .child:hover {
   background-color: hsl(39, 100%, 40%);
   scale: 0.95;
-}
+} */
 
 .span-all {
   grid-column-start: 1;
   grid-column-end: 4;
+}
+
+#one {
+  display: block;
+}
+
+#one input {
+  outline:solid black 1px;
+  width: 90px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+#one button {
+  background-color: black;
+  color: white;
+  padding-inline: 5px;
+  padding-block: 2px;
+  cursor: pointer;
+}
+
+#one ul {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 4px;
+  padding-block: 4px;
+}
+
+#one li {
+  background-color: rgb(166, 98, 52);
+  padding: 2px;
+  display: grid;
+  grid-template-columns: 15px auto 15px 15px;
+  align-items: center;
+  justify-items: baseline;
+  gap: 3px;
+}
+
+#one li button {
+  background-color: inherit;
+}
+
+.todoComplete {
+  text-decoration: line-through;
+  color: red;
 }
